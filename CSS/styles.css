@@ -1,0 +1,173 @@
+/* ============================== */
+/* Global Styles */
+/* ============================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ============================== */
+/* Container */
+/* ============================== */
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) { .container { width: 750px; } }
+@media (min-width: 992px) { .container { width: 970px; } }
+@media (min-width: 1200px) { .container { width: 1170px; } }
+
+/* ============================== */
+/* Header */
+/* ============================== */
+
+.blog-comunicación header {
+  min-height: 80px;
+  display: flex;
+}
+
+.blog-comunicación header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #6c63ff;
+}
+
+.blog-comunicación header .logo {
+  color: #5d5d5d;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* ============================== */
+/* Navigation Links */
+/* ============================== */
+
+.blog-comunicación header .links {
+  display: flex;
+  align-items: center;
+}
+
+.blog-comunicación header .links li {
+  margin-left: 30px;
+  color: #5d5d5d;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.blog-comunicación header .links li:not(:last-child):hover {
+  color: #6c63ff;
+}
+a {
+  color: #000000 !important;
+}
+
+/* Botón especial */
+.blog-comunicación header .links li:last-child {
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #FFF;
+  background-color: #8882f8;
+}
+
+/* ============================== */
+/* Main Content */
+/* ============================== */
+
+.blog-comunicación .content .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 140px;
+  min-height: calc(100vh - 80px);
+}
+
+.blog-comunicación .content .info h1 {
+  color: #5d5d5d;
+  font-size: 44px;
+}
+
+.blog-comunicación .content .info p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #5d5d5d;
+}
+
+/* Botón */
+.blog-comunicación .content .info button {
+  border: 0;
+  border-radius: 20px;
+  padding: 12px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #6c63ff;
+}
+
+/* Imagen */
+.blog-comunicación .content .image img {
+  max-width: 100%;
+}
+
+/* ============================== */
+/* Responsive Design (Mobile) */
+/* ============================== */
+
+@media (max-width: 767px) {
+  /* Header */
+  .blog-comunicación header {
+      min-height: auto;
+      display: initial;
+  }
+
+  .blog-comunicación header .container {
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .blog-comunicación header .logo {
+      margin: 20px 0;
+  }
+
+  .blog-comunicación header .links {
+      text-align: center;
+      gap: 10px;
+  }
+
+  .blog-comunicación header .links li {
+      margin-left: auto;
+  }
+
+  /* Main Content */
+  .blog-comunicación .content .container {
+      gap: 0;
+      min-height: calc(100vh - 101px);
+      justify-content: center;
+      flex-direction: column-reverse;
+  }
+
+  .blog-comunicación .content .info {
+      text-align: center;
+      margin-bottom: 15px;
+  }
+}
