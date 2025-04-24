@@ -1,39 +1,376 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comunicaciónes</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - Estilo Drive</title>
+  <link rel="stylesheet" href="../CSS/blog.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="blog-comunicación">
-        <header>
-            <div class="container">
-                <nav>
-                    <ul class="links">
-                        <li><a href="html/login.html">Inicia Sesión</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!-- Main Content Section -->
-        <main class="content">
-            <div class="container">
-                <div class="info">
-                    <h1>"La comunicación"</h1>
-                    <p>
-                    La comunicación es un proceso fundamental mediante el cual las personas pueden transmitir e intercambiar información, ideas, pensamientos, emociones o conocimientos.
-                    Es una herramienta básica para la vida en sociedad, ya que permite la interacción entre los seres humanos en diferentes contextos: familiares, educativos, laborales, sociales, entre otros.
-                    </p>
-                </div>
-                <div class="image">
-                    <img src="https://i.postimg.cc/65QxYYzh/001234.png" alt="Inspiration Image">
-                </div>
-            </div>
-        </main>
 
+  <header>
+    <h1>Nuestro Blog</h1>
+  </header>
+
+  <main class="grid-container">
+    <div class="folder" style="background-color: #a48be9;" onclick="mostrarContenido('mariana')">
+      📁 <div class="folder-title">Mariana Valencia</div>
     </div>
+    <div class="folder" style="background-color: #aef17b;" onclick="mostrarContenido('dairo')">
+      📁 <div class="folder-title">Dairo Montiel</div>
+    </div>
+    <div class="folder" style="background-color: #70c3f3;" onclick="mostrarContenido('gloria')">
+      📁 <div class="folder-title">Gloria Serley</div>
+    </div>
+    <div class="folder" style="background-color: #f56b6d ;" onclick="mostrarContenido('shirley')">
+      📁 <div class="folder-title">Shirley Arango</div>
+    </div>
+  </main>
+
+  <section id="mariana" class="folder-content">
+    <div class="text-section">
+      <button class="close-btn" onclick="cerrarContenido('mariana')">Cerrar ✖</button>
+      <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      <img src="../IMG/sapo.jpg" width="50%" alt="">
+      </button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+      <img src="../IMG/segunda.png" width="50%" alt="">
+      </button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+      <img src="../IMG/tercero.jpg" width="50%" alt="">
+      </button>
+    </div>
+  </section>
+
+  <section id="dairo" class="folder-content">
+    <div class="text-section">
+      <button class="close-btn" onclick="cerrarContenido('dairo')">Cerrar ✖</button>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dairon1">
+        <img src="../IMG/sapo.jpg" width="50%" alt="">
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dairon2">
+        <img src="../IMG/segunda.png" width="50%" alt="">
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dairon3">
+        <img src="../IMG/tercero.jpg" width="50%" alt="">
+        </button>
+    </div>
+  </section>
+
+  <section id="gloria" class="folder-content">
+    <div class="text-section">
+      <button class="close-btn" onclick="cerrarContenido('shirley')">Cerrar ✖</button>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gloria1">
+          <img src="../IMG/sapo.jpg" width="50%" alt="">
+          </button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gloria2">
+          <img src="../IMG/segunda.png" width="50%" alt="">
+          </button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gloria3">
+          <img src="../IMG/tercero.jpg" width="50%" alt="">
+          </button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gloria4">
+            <img src="../IMG/taller.jpg" width="50%" alt="">
+            </button>
+    </div>
+  </section>
+
+  <section id="shirley" class="folder-content">
+    <div class="text-section">
+      <button class="close-btn" onclick="cerrarContenido('shirley')">Cerrar ✖</button>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sirly1">
+          <img src="../IMG/sapo.jpg" width="50%" alt="">
+          </button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sirly2">
+          <img src="../IMG/segunda.png" width="50%" alt="">
+          </button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sirly3">
+          <img src="../IMG/tercero.jpg" width="50%" alt="">
+          </button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sirly4">
+            <img src="../IMG/taller.jpg" width="50%" alt="">
+            </button>
+    </div>
+  </section>
+
+  <script>
+    function mostrarContenido(id) {
+      const activa = document.getElementById(id);
+      if (activa && !activa.classList.contains('active')) {
+        activa.classList.add('active');
+        activa.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+
+    function cerrarContenido(id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.classList.remove('active');
+      }
+    }
+  </script>
+
+  <!------------------->
+  <!-- Modal 1 -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">La sapa caramelo</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="../pdf/WhatsApp Image 2025-04-09 at 8.45.52 PM.jpeg" width="100%" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----modal 2----->
+<div class="modal fade" id="modal2"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Comunicación</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="../pdf/funcion de lenguaje poetico.pdf" width="100%" height="600px"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----modal3---->
+<div class="modal fade" id="modal3"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">El color del paraiso</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="../pdf/taller122.pdf" width="100%" height="600px"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----modal1dairo---->
+<div class="modal fade" id="dairon1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">La sapa caramelo</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="../pdf/dairon1.jpeg" width="100%" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>         
+
+<!----modal2dairo---->
+<div class="modal fade" id="dairon2"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Comunicación</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="../pdf/dairon2.pdf" width="100%" height="600px"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----modal3dairo---->
+<div class="modal fade" id="dairon3"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">El color del paraiso</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="../pdf/dairon3.pdf" width="100%" height="600px"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----modal1gloria---->
+<div class="modal fade" id="gloria1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">La sapa caramelo</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="../pdf/Mi Cuento.pdf" width="100%" height="600px"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!----modal2gloria---->
+<div class="modal fade" id="gloria2"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Comunicación</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="../pdf/comunicacion.pdf" width="100%" height="600px"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----modal3gloria---->
+<div class="modal fade" id="gloria3"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">El color del paraiso</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="../pdf/color.pdf" width="100%" height="600px"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----modal4gloria---->
+<div class="modal fade" id="gloria4"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Taller</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="../pdf/taller4.pdf" width="100%" height="600px"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----modal1sir------->
+<div class="modal fade" id="sirly1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">La sapa caramelo</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="../pdf/sirr1.pdf" width="100%" height="600px"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!----modal2sir------->
+<div class="modal fade" id="sirly2"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Comunicación</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="../pdf/siir2.pdf" width="100%" height="600px"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----modal3sir------->
+<div class="modal fade" id="sirly3"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">El color del paraiso</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="../pdf/color.pdf" width="100%" height="600px"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----modal4sir------->
+<div class="modal fade" id="sirly4"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Taller</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="../pdf/siir4.pdf" width="100%" height="600px"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
 </body>
 </html>
+
